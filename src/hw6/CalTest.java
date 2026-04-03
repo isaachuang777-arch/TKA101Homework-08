@@ -39,10 +39,19 @@ public class CalTest {
 			} catch (NumberFormatException e) {
 
 				System.out.println("請輸入數字，不得空白");
-				
+
 			} catch (Exception e) {
 
 				System.out.println("未知錯誤");
+				
+			} finally {                     //<----------突然發現scanner不關的話會佔資源 最簡單的做法如果直接寫在後面
+				                            //           跳出exception會導致沒辦法執行關閉scanner所以加上finally無論如何都會關
+
+				if (sc != null) {
+					
+					sc.close();
+				}
+
 			}
 		}
 
