@@ -73,7 +73,7 @@ public class Transcript {
 
 		}
 
-		System.out.println(studentId);
+//		System.out.println(studentId);
 
 //		System.out.println(Arrays.toString(countNo1));
 

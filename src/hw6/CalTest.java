@@ -43,19 +43,16 @@ public class CalTest {
 			} catch (Exception e) {
 
 				System.out.println("未知錯誤");
-				
-			} finally {                     //<----------突然發現scanner不關的話會佔資源 最簡單的做法如果直接寫在後面
-				                            //           跳出exception會導致沒辦法執行關閉scanner所以加上finally無論如何都會關
-
-				if (sc != null) {
-					
-					sc.close();
-				}
 
 			}
-		}
 
+		}
+		
+		sc.close(); // <---------Scanner 記得關掉 不然佔資源
 	}
+	
+	
+	// 處理如果使用者輸入非數字，由上一段 sc.nextLine() 以 String 的型別來儲存，並用 NumberFormatException
 
 	public int isNum(String input) throws NumberFormatException {
 
