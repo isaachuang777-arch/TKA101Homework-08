@@ -58,7 +58,7 @@ public class CalTest {
 
 		if (input == null || input.trim().isEmpty()) {
 
-			throw new NumberFormatException("格式不對，不得輸入空白");
+			throw new NumberFormatException();
 		}
 
 		return Integer.parseInt(input.trim());

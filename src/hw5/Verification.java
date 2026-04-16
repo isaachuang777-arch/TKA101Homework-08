@@ -34,7 +34,7 @@ public class Verification {
 			
 			authcode[j] = authcode[shuffleNum];
 			
-			authcode[shuffleNum] = temp;
+			authcode[shuffleNum] = temp;  //必須將取得的數字或字元在存回洗牌組裡
 		}
 
 		String result = new String(authcode);
