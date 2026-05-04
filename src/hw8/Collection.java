@@ -76,7 +76,6 @@ public class Collection {
 		for(Object element : list) {
 			System.out.print(element+"\t");
 		}
-
 	}
 
 }
