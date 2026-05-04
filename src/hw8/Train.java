@@ -72,7 +72,7 @@ public class Train implements Comparable<Train> {
 		this.price = price;
 	}
 
-	// 只示範一次的右鍵Source > Generate hashCode() and equals() 而自訂物件不重複這件事情仰賴下面的 hasCode跟equals
+	// 只示範一次的右鍵Source > Generate hashCode() and equals() 而hashSet自訂物件不重複這件事情仰賴下面的 hasCode跟equals
 
 	@Override
 	public int hashCode() {
