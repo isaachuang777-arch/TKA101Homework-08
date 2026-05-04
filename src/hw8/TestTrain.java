@@ -66,7 +66,6 @@ public class TestTrain {
 		for(Train t : trainSet2) {
 			System.out.println(t);
 		}
-		
 	}
 
 }
