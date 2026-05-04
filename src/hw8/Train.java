@@ -106,6 +106,7 @@ public class Train implements Comparable<Train> {
 
 	public String toString() {
 		return String.format("(%d --%s-- %s -> %s : %.0f)", number, type, start, dest, price);
+		
 	}
 
 }
