@@ -18,7 +18,7 @@ public class TestEatingGame {
 		t2.start();
 		
 		try {
-			
+			// 避免 main 方法直接跑到最下面 System.out.println("-----大胃王快食比賽結束-----"); 用join方法讓主執行緒等子執行緒結束
 			t1.join();
 			t2.join();
 			
